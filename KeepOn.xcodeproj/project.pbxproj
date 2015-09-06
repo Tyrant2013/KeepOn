@@ -13,6 +13,12 @@
 		EB448C031B95EC41003FD122 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB448C021B95EC41003FD122 /* Images.xcassets */; };
 		EB448C061B95EC41003FD122 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB448C041B95EC41003FD122 /* LaunchScreen.xib */; };
 		EB448C121B95EC41003FD122 /* KeepOnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB448C111B95EC41003FD122 /* KeepOnTests.swift */; };
+		EB448C231B95EFD3003FD122 /* Diagram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB448C221B95EFD3003FD122 /* Diagram.storyboard */; };
+		EB448C251B95EFE6003FD122 /* Things.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB448C241B95EFE6003FD122 /* Things.storyboard */; };
+		EB448C271B95F117003FD122 /* ThingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB448C261B95F117003FD122 /* ThingCell.swift */; };
+		EB448C2A1B95F37C003FD122 /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB448C291B95F37C003FD122 /* TableDataSource.swift */; };
+		EB448C2C1B95F394003FD122 /* TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB448C2B1B95F393003FD122 /* TableDelegate.swift */; };
+		EB448C2E1B95F3A1003FD122 /* TableCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB448C2D1B95F3A1003FD122 /* TableCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		EB448C0B1B95EC41003FD122 /* KeepOnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeepOnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB448C101B95EC41003FD122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB448C111B95EC41003FD122 /* KeepOnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepOnTests.swift; sourceTree = "<group>"; };
+		EB448C221B95EFD3003FD122 /* Diagram.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diagram.storyboard; sourceTree = "<group>"; };
+		EB448C241B95EFE6003FD122 /* Things.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Things.storyboard; sourceTree = "<group>"; };
+		EB448C261B95F117003FD122 /* ThingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingCell.swift; sourceTree = "<group>"; };
+		EB448C291B95F37C003FD122 /* TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		EB448C2B1B95F393003FD122 /* TableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDelegate.swift; sourceTree = "<group>"; };
+		EB448C2D1B95F3A1003FD122 /* TableCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,12 @@
 		EB448BF81B95EC41003FD122 /* KeepOn */ = {
 			isa = PBXGroup;
 			children = (
+				EB448C281B95F366003FD122 /* Shared */,
+				EB448C211B95EF83003FD122 /* Categories */,
+				EB448C1B1B95EF6D003FD122 /* Models */,
+				EB448C1C1B95EF6D003FD122 /* Resources */,
+				EB448C1F1B95EF6D003FD122 /* ViewControllers */,
+				EB448C201B95EF6D003FD122 /* Views */,
 				EB448BFB1B95EC41003FD122 /* AppDelegate.swift */,
 				EB448BFD1B95EC41003FD122 /* ViewController.swift */,
 				EB448BFF1B95EC41003FD122 /* Main.storyboard */,
@@ -110,6 +128,70 @@
 				EB448C101B95EC41003FD122 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB448C1B1B95EF6D003FD122 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB448C1C1B95EF6D003FD122 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB448C1D1B95EF6D003FD122 /* Images */,
+				EB448C1E1B95EF6D003FD122 /* StoryBoards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EB448C1D1B95EF6D003FD122 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EB448C1E1B95EF6D003FD122 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				EB448C241B95EFE6003FD122 /* Things.storyboard */,
+				EB448C221B95EFD3003FD122 /* Diagram.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		EB448C1F1B95EF6D003FD122 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EB448C201B95EF6D003FD122 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB448C261B95F117003FD122 /* ThingCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB448C211B95EF83003FD122 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EB448C281B95F366003FD122 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EB448C291B95F37C003FD122 /* TableDataSource.swift */,
+				EB448C2B1B95F393003FD122 /* TableDelegate.swift */,
+				EB448C2D1B95F3A1003FD122 /* TableCoordinator.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +274,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB448C251B95EFE6003FD122 /* Things.storyboard in Resources */,
 				EB448C011B95EC41003FD122 /* Main.storyboard in Resources */,
 				EB448C061B95EC41003FD122 /* LaunchScreen.xib in Resources */,
+				EB448C231B95EFD3003FD122 /* Diagram.storyboard in Resources */,
 				EB448C031B95EC41003FD122 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB448BFE1B95EC41003FD122 /* ViewController.swift in Sources */,
+				EB448C271B95F117003FD122 /* ThingCell.swift in Sources */,
+				EB448C2C1B95F394003FD122 /* TableDelegate.swift in Sources */,
 				EB448BFC1B95EC41003FD122 /* AppDelegate.swift in Sources */,
+				EB448C2A1B95F37C003FD122 /* TableDataSource.swift in Sources */,
+				EB448C2E1B95F3A1003FD122 /* TableCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +499,7 @@
 				EB448C171B95EC41003FD122 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB448C181B95EC41003FD122 /* Build configuration list for PBXNativeTarget "KeepOnTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +508,7 @@
 				EB448C1A1B95EC41003FD122 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

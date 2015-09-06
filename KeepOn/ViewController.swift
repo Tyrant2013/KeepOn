@@ -9,17 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var tableCoordinator :TableCoordinator!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.tableCoordinator.reloadData(["1", "2", "3"]);
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
